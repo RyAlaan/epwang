@@ -1,3 +1,4 @@
+import AppShell from "@/appShell/AppShell";
 import { NavbarProvider } from "@/context/NavbarContext";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -28,7 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${formula.variable} font-formula`}>
       <NavbarProvider>
-        <Component {...pageProps} />
+        <AppShell>
+          <Component {...pageProps} />
+        </AppShell>
       </NavbarProvider>
     </main>
   );
