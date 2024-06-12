@@ -81,16 +81,16 @@ const NavbarLayout = () => {
           onClick={setIsOpen}
         >
           {isOpen ? (
-            <FontAwesomeIcon icon={faBars} className="" />
-          ) : (
             <FontAwesomeIcon icon={faXmark} className="" />
+          ) : (
+            <FontAwesomeIcon icon={faBars} className="" />
           )}
         </div>
       </div>
       <div
         className={clsx(
           "absolute z-[-1] w-full px-3 py-6 gap-y-5 flex md:hidden flex-col bg-primary transition-all duration-500",
-          isOpen && "-translate-y-80"
+          !isOpen && "-translate-y-80"
         )}
       >
         <NavbarListSm text={"Schedule"} link={"#"} />
