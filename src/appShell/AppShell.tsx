@@ -1,4 +1,4 @@
-import NavbarLayout from "@/components/layouts/NavbarLayout/NavbarLayout";
+import NavbarLayout from "@/components/layouts/NavbarLayout";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 

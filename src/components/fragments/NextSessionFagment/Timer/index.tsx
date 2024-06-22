@@ -1,4 +1,4 @@
-import TimerElements from "@/components/elements/TimerEelements/TimerElement";
+import TimerElements from "@/components/elements/TimerEelements";
 
 const TimerFragment = () => {
   return (

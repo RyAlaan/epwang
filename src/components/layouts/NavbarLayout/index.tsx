@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
-import NavbarListSm from "../../elements/NavbarListElementSm/NavbarListElementSm";
+import NavbarListSm from "../../elements/NavbarListElementSm";
 import { useIsNavbarOpen } from "@/context/NavbarContext";
 
 const NavbarLayout = () => {

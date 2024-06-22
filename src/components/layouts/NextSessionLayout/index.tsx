@@ -1,5 +1,5 @@
-import NextRoundFragment from "@/components/fragments/NextRoundFragment/NextRoundFragment";
-import TimerFragment from "@/components/fragments/TimerFragment/TimerFragment";
+import NextRoundFragment from "@/components/fragments/NextSessionFagment/NextSession";
+import TimerFragment from "@/components/fragments/NextSessionFagment/Timer";
 
 const NextRoundLayout = () => {
   return (
