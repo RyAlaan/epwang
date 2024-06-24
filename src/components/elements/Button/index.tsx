@@ -13,10 +13,10 @@ const Button = ({ text, link }: ButtonInterface) => {
   return (
     <Link
       href={`${link}`}
-      className={`w-fit px-2 flex flex-row items-center gap-x-2 bg-primary rounded border-2 border-primary`}
+      className={`w-fit px-4 py-2 flex flex-row items-center gap-x-2 bg-primary rounded border-2 border-primary hover:bg-transparent transition-all duration-500 group`}
     >
       <p>{text}</p>
-      <FontAwesomeIcon icon={faAngleRight} />
+      <FontAwesomeIcon icon={faAngleRight} className="group-hover:translate-x-1 transition-all duration-500"/>
     </Link>
   );
 };
