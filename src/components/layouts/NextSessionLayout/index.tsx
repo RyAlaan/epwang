@@ -12,8 +12,6 @@ const NextRoundLayout = () => {
         const res = await axios.get("http://ergast.com/api/f1/2024.json");
         if (res.status === 200) {
           const raceTable: any = res.data.MRData.RaceTable.Races;
-          console.log(raceTable);
-
           const now = new Date();
 
           let sessions: any[] = [];
@@ -97,13 +95,10 @@ const NextRoundLayout = () => {
             (session) => session.dateTime > now
           );
 
-          console.log(nextSession);
           setNextRoundData(nextSession)
         }
       } catch (error: any) {
         console.log(error.res.status);
-        console.log(error.res.statusText);
-
         return null;
       }
     };

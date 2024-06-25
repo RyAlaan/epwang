@@ -52,7 +52,7 @@ const NewsLayout = () => {
               >
                 <div className="w-full aspect-[4/3] rounded-md overflow-hidden">
                   <div
-                    className={`w-full h-full group-hover:scale-110 transition-all duration-500 bg-[url('https://www.newsweek.com/sports/formula1/haas-f1-retaliates-against-uralkali-contradicting-statement-after-tribunal-ruling-1916205')] bg-top bg-cover`}
+                    className={`w-full h-full group-hover:scale-110 transition-all duration-500 bg-[url('https://placeimg.com/640/480/arch')] bg-top bg-cover`}
                   ></div>
                 </div>
 

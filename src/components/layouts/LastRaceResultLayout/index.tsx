@@ -18,7 +18,6 @@ const LastRaceResult = () => {
 
         if (res.status === 200) {
           setRaceResultData(res.data.MRData.RaceTable);
-          console.log(res.data.MRData.RaceTable);
         }
       } catch (error: any) {
         console.error(error);

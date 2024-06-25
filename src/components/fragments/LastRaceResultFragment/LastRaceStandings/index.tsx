@@ -5,8 +5,6 @@ interface LastRaceStandingsInterface {
 }
 
 const LastRaceStandings = ({ driverStandings }: LastRaceStandingsInterface) => {
-  console.log(driverStandings);
-
   return (
     <div className="max-w-[40rem] flex flex-col items-center gap-y-10">
       <div className="w-full flex flex-row gap-x-5">
