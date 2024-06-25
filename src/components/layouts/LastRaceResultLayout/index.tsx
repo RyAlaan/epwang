@@ -29,7 +29,7 @@ const LastRaceResult = () => {
   }, []);
 
   return (
-    <div className="relative w-full px-10 py-10 lg:py-20 flex flex-col">
+    <div className="relative w-full min-h-[447px] px-10 py-10 lg:py-20 flex flex-col">
       <ChequeredElement />
       <div className="container w-full flex flex-col md:flex-row md:justify-between items-center px-3 z-50">
         {raceResultData && (
