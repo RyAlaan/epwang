@@ -11,6 +11,8 @@ const NextRoundFragment = ({
   circuitName,
   country,
 }: NextRoundInterface) => {
+  console.log(country);
+  
   return (
     <div className="w-full flex flex-col gap-y-6">
       <div className="pb-3 flex flex-row justify-between border-b-2">

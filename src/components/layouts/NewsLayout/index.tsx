@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Titillium_Web } from "next/font/google";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Result } from "postcss";
 import clsx from "clsx";
 const titillium_Web = Titillium_Web({ subsets: ["latin"], weight: ["600"] });
 
@@ -13,7 +12,7 @@ const NewsLayout = () => {
     const getRaceResultData = async () => {
       try {
         const res = await axios.get(
-          "https://newsapi.org/v2/everything?q=f1&language=en&apiKey=5175acce6283421980e8b3b36304c949&sortBy=publishedAt&excludeDomains=racefans.net,hackaday.com,screenrant.com"
+          "https://newsapi.org/v2/everything?q=f1&language=en&apiKey=5175acce6283421980e8b3b36304c949&sortBy=publishedAt&excludeDomains="
         );
 
         if (res.status === 200) {
@@ -40,7 +39,8 @@ const NewsLayout = () => {
                 href={item.url}
                 className={clsx(
                   index === 0 &&
-                    "flex flex-col-reverse col-span-2 row-span-2 gap-y-10 sticky top-0",
+                    // "flex flex-col-reverse col-span-2 row-span-2 gap-y-10 sticky top-20",
+                    "flex flex-col-reverse justify-between col-span-2 row-span-2 gap-y-10 sticky top-20 group",
                   index !== 0 &&
                     index % 2 === 0 &&
                     "gap-y-8 flex flex-col min-h-32 group",
@@ -63,7 +63,7 @@ const NewsLayout = () => {
                 <div
                   className={clsx(
                     index === 0
-                      ? "pr-8 py-6 border-primary border-t-[16px] border-r-[16px] rounded-tr-3xl"
+                      ? "h-2/5 pr-8 py-6 border-primary border-t-[16px] border-r-[16px] rounded-tr-3xl"
                       : "h-3/5 pr-2 border-tertiary group-hover:border-primary rounded-br-3xl border-r-2 border-b-2 transition-all duration-500"
                   )}
                 >

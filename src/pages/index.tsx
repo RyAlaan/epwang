@@ -1,6 +1,7 @@
 import LastRaceResult from "@/components/layouts/LastRaceResultLayout";
 import NewsLayout from "@/components/layouts/NewsLayout";
 import NextRoundLayout from "@/components/layouts/NextSessionLayout";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <NextRoundLayout />
       <LastRaceResult />
       <NewsLayout />
-      <div className="min-h-60"></div>
+      <div className="min-h-60">
+      </div>
     </div>
   );
 }
